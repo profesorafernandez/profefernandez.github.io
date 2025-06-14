@@ -2,28 +2,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Español con la Profesora Fernández</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5fa; color: #333; margin: 0; }
+    header { background: #b88acb; color: white; padding: 50px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    nav { background-color: #e0c7ec; padding: 10px 20px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #4a2f57; font-weight: bold; }
+    .seccion { max-width: 800px; margin: auto; padding: 40px 20px; }
+    h2 { color: #4a2f57; }
+    .apoyo { font-style: italic; color: #777; }
+    input, textarea, button {
+      width: 100%; padding: 10px; margin: 5px 0 15px; border: 1px solid #ccc; border-radius: 4px;
+    }
+    button { background-color: #b88acb; color: white; border: none; font-weight: bold; cursor: pointer; }
+    button:hover { background-color: #9c70b0; }
+  </style>
 </head>
 <body>
+
+<header>
   <h1>Español con la Profesora Fernández</h1>
-  <p>Hola, soy la Profesora Fernández. Soy de Santander, una ciudad en el norte de España, y desde hace casi 20 años me dedico a la enseñanza de lenguas.</p>
-  <p>Este sitio está pensado para ayudarte a aprender español. Aquí encontrarás audios, explicaciones y enlaces útiles.</p>
+</header>
 
-  <h2>Audios de bienvenida</h2>
-  <p>Escucha algunos ejemplos con mi voz:</p>
-  <p>Hola: <audio controls src="hola.mp3"></audio></p>
-  <p>Bienvenidos: <audio controls src="bienvenidos.mp3"></audio></p>
-  <p>¿Estás listo para aprender el alfabeto?: <audio controls src="alfa.mp3"></audio></p>
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#frases">Frases útiles</a>
+  <a href="#vocabulario">Vocabulario</a>
+  <a href="#gramatica">Gramática</a>
+  <a href="#contacto">Contacto</a>
+</nav>
 
-  <h2>Primeras unidades</h2>
+<section id="inicio" class="seccion">
+  <h2>Presentación</h2>
+  <p>Soy la profesora Fernández, originaria de Santander (norte de España). Llevo casi 20 años enseñando español en España, Inglaterra, Irlanda e Italia.</p>
+  <p>Esta página está pensada para ayudarte a practicar español con videos, audios y actividades.</p>
+  <p>Si tienes alguna pregunta, duda o sugerencia, no dudes en escribirme.</p>
+</section>
+
+<section id="frases" class="seccion">
+  <h2>Frases útiles en el aula</h2>
   <ul>
-    <li>El alfabeto</li>
-    <li>Saludos y presentaciones</li>
-    <li>Los números</li>
+    <li>¿Cómo se dice esto en español?</li>
+    <li>¿Cómo se dice 'tree' en español?</li>
+    <li>¿Puedo ir al baño?</li>
+    <li>Me he olvidado el cuaderno en mi taquilla.</li>
+    <li>¿Puedo ir a buscarlo?</li>
   </ul>
+</section>
 
-  <p>Más contenido muy pronto...</p>
+<section id="vocabulario" class="seccion">
+  <h2>Vocabulario por temas</h2>
+  <ul>
+    <li>Partes del día</li>
+    <li>Escuela y clases</li>
+    <li>Aspecto físico y personalidad</li>
+    <li>Familia</li>
+    <li>Números (20-100, 100+)</li>
+    <li>Actividades y aficiones</li>
+    <li>Horas y días de la semana</li>
+    <li>Adjetivos para la ropa</li>
+    <li>Colores</li>
+    <li>Meses, fechas y estaciones</li>
+    <li>El clima</li>
+    <li>Viajes y transporte</li>
+    <li>Geografía y lugares</li>
+  </ul>
+</section>
+
+<section id="gramatica" class="seccion">
+  <h2>Temas de gramática</h2>
+  <ul>
+    <li>Presente de llamarse, hablar, ser y tener</li>
+    <li>Singular/plural, masculino/femenino</li>
+    <li>Hay / No hay, gustar</li>
+    <li>Artículos determinados e indeterminados</li>
+    <li>Posesivos, cuantificadores</li>
+    <li>Concordancia y conectores (y, pero, ni...ni)</li>
+    <li>Presente regular e irregular (hacer, salir, jugar...)</li>
+    <li>Verbos reflexivos (levantarse, acostarse)</li>
+    <li>Frecuencia (todos los días, una vez por semana...)</li>
+    <li>Verbo estar, preposición para, demostrativos</li>
+    <li>Pretérito perfecto</li>
+    <li>Futuro con ir a + infinitivo</li>
+    <li>Impersonalidad con se</li>
+    <li>Frases relativas</li>
+    <li>Superlativos y preposiciones de lugar</li>
+  </ul>
+</section>
+
+<section id="contacto" class="seccion">
+  <h2>Formulario de contacto</h2>
+  <form action="https://formspree.io/f/your-code" method="POST">
+    <label for="name">Tu nombre:</label>
+    <input type="text" name="name" required>
+
+    <label for="email">Tu correo electrónico:</label>
+    <input type="email" name="email" required>
+
+    <label for="message">Mensaje:</label>
+    <textarea name="message" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
 </body>
 </html>
